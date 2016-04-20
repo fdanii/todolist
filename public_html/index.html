@@ -1,16 +1,61 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TodoList-Danielle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+
+     
+        
+      </head>
+        <body >
+
+            <h1>TodoList</h1>
+                     <h2></h2>        
+            
+         <header>   
+             <nav>
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>   
+                <li><a href="admin.html">Admin</a></li>    
+            </ul>
+            </nav>
+         </header>
+    
+        <header>
+            <p> To Do List</p>
+           
+        </header>
+           <footer>
+            <div class="bttt">
+                <a href="#">Back to the top</a>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; 2016 Danielle
+                </div>
+           </footer>   
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="libs/backendless.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+      <script type="text/javascript" src="js/init.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+      <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+
+      <script id="blogs-template" type="text/x-handlebars-template">
+          {{#each posts}}
+          <div class="blog-post">
+            <h2 class="blog-post-title">{{title}}</h2>
+            <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+            <div>{{{content}}}</div>
+          </div>
+        {{/each}}
+      </script>
     </body>
 </html>

@@ -1,0 +1,110 @@
+ul img {
+    width: 240px;
+    height: auto;
+}
+body {
+   background-color: #9C8780;
+}
+p {
+    font-size: 4em;
+    color: white;
+    margin-top: 19px;
+}
+header h4 {
+    font-size: 1.5em;
+    color: white;
+}
+body h1  {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+}
+.container {
+    margin-top: 10px;
+    font-size: 1.25em;
+}
+.bttt {
+    font-size: 8px;
+    font-size: 1.5em;
+}
+a {
+    color: white;
+}
+header {
+    margin-bottom: 2px;
+    width: 100%;
+}
+.socialmediaicon {
+    width: 110px;
+    height: auto;
+    margin: 0 5px;
+}
+footer {
+    color: white;
+    text-align: center;
+}
+h1, h2 {
+    color: gray;
+}
+
+nav {
+    text-align: center;
+    padding: 0px 0;
+    margin:2px 2px 2px;
+    margin-bottom: 2px;
+    font-size: 2em;
+}
+nav ul {
+    list-style: none;
+    padding: 10px 2px;
+    margin: 0 2px;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    font-weight: 800;
+    padding: 15px 10px;
+}
+nav a.selected,nav a:hover {
+    color: lightgray;
+}
+ul a {
+    color: white;
+}
+ 
+header {
+    text-align: center;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.contact-info a {
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat; 
+    background-size: 25px 25px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}header h3 {
+    font-size: 2.75em;
+    color: white;
+    margin-top: -1px;
+}
+
+
+/**** ABOUT PAGE****/
+@media screen and (min-width: 660px) {
+  
+   
+    header {
+        border-top: 5px solid white;
+        margin-bottom: 8px;
+    } 
+}
+footer {
+    font-size: .95em;
+}
