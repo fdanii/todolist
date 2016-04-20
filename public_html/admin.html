@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>TodoList-Danielle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/admin.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+
+      </head>
+        <body >
+
+           <h1></h1>
+                     <h2></h2>        
+            
+         <header>   
+             <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="admin.html">Admin</a></li>   
+            </ul>
+            </nav>
+         </header>
+
+
+    
+        <header>
+            
+            <p>Login :]</p>
+        </header>
+          <footer>
+            <div class="bttt">
+                <a href="#">Back to the top</a>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    &copy; 2016 Danielle
+                </div>
+           </footer>   
+                     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="libs/backendless.js"></script>
+      <script type="text/javascript" src="js/admin.js"></script>
+      <script type="text/javascript" src="js/init.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+      <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+
+      <script id="login-template" type="text/x-handlebars-template">
+          <div class="col s6">
+          <h2 class="center-align">Login</h2>
+          <div>
+              <form class=" col s12 form-signin">
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input id="email" type="email" name="email" class="validate">
+                          <label for="email">Email</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="input-field col s12">
+                          <input id="password" type="password" name="password" class="validate">
+                          <label for="password">Password</label>
+                          </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12">
+                          <p class="right-align">
+                              <button <a gotError="Materialize.toast('Incorrect Login', 4000)" class="btn btn-large waves-effect waves-light" type="submit" name="action">Login</button>
+                          </p>
+                      </div>
+                  </div>    
+              </form>
+          </div>
+      </div>
+      </script>
+      <script id="welcome-template" type="text/x-handlebars-template">
+        <h2>Welcome, {{email}}</h2>
+        <button class="btn btn-large waves-effect waves-light add-blog">Add a new Blog</button>
+        <button class="btn btn-large waves-effect waves-light logout">Logout</button>
+      </script>
+      <script  id="add-blog-template" type="text/x-handlebars-template">
+          <h2>Add a new Blog</h2>
+            <div class="row">
+          <form class="col s12 form-add-blog">
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input id="title" type="text" name="title">
+              <label for="title">Title</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s12">
+                      <textarea id="content" name="content" class="materialize-textarea"></textarea>
+              <label class="content"for="content">Content</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12">
+                      <p class="right-align">
+                          <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Submit</button>
+                      </p>
+                  </div>
+              </div>
+          </form>
+      </div>
+      </script>
+    </body>
+</html>
