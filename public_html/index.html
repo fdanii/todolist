@@ -28,7 +28,7 @@
          </header>
     
         <header>
-            <p> To Do List</p>
+            <p> hello</p>
            
         </header>
            <footer>
@@ -51,10 +51,10 @@
       <script id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
           <div class="blog-post">
-            <h2 class="blog-post-title">{{title}}</h2>
-            <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
-            <div>{{{content}}}</div>
-          </div>
+          <h2 class="blog-post-title">{{title}}</h2>
+          <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+          <div>{{content}}</div>
+        </div>
         {{/each}}
       </script>
     </body>

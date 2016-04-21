@@ -6,7 +6,7 @@ $(function (){
         Backendless.initApp(APPLICATION_ID, SECRET_KEY, VERSION);
 
         var dataStore = Backendless.Persistence.of(Posts);
-        var post = new Posts({title: "My first post", content:"First content", email:"email@email.com"});
+        var post = new Posts({title: "My first post", content:"First content", authorEmail:"email@email.com"});
         dataStore.save(post);
 });
         
@@ -38,6 +38,4 @@ $(function (){
         this.title = args.title || "";
         this.content = args.content || "";
         this.authorEmail = args.authorEmail || "";
-        
     }
- 
