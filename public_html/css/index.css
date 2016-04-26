@@ -3,7 +3,25 @@ ul img {
     height: auto;
 }
 body {
-   background-color: #9C8780;
+    display: flex;
+    min-height: 95vh;
+    flex-direction: column;
+    height: 100%; 
+    background-color: #9C8780;
+}
+.blog-post-meta {
+    font-size: 1.90em;
+}
+.main-container {
+    color: white;
+    font-size: .75em;
+}
+.main {
+    flex: 1 0 auto; 
+}
+.blog-post-title {
+  color: white;
+  font-size: 2em;
 }
 p {
     font-size: 4em;
@@ -42,6 +60,7 @@ header {
 footer {
     color: white;
     text-align: center;
+    padding-top: 50px;
 }
 h1, h2 {
     color: gray;

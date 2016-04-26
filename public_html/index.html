@@ -3,11 +3,11 @@
         <title>TodoList-Danielle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link rel="stylesheet" type="text/css" href="css/materialize.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="icon" href="data:;base64,iVBORwOKGgo=">
 
      
@@ -26,13 +26,22 @@
             </ul>
             </nav>
          </header>
-    
-        <header>
-            <p> hello</p>
-           
-        </header>
-           <footer>
-            <div class="bttt">
+                   
+            
+        <main> 
+             <div class="container">
+                <div class="row">
+                    <h1 class="center-align">To Do List</h1>
+            </div>
+                <div class="row">
+                    <div  class="col s12 main-container">
+                       </div>
+                    </div>
+                </div>
+        </main>
+        
+           <footer class="page-footer">
+            <div class="bttt container">
                 <a href="#">Back to the top</a>
             </div>
             <div class="footer-copyright">
@@ -42,19 +51,17 @@
            </footer>   
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="libs/backendless.js"></script>
-      <script type="text/javascript" src="js/index.js"></script>
-      <script type="text/javascript" src="js/init.js"></script>
+      <script type="text/javascript" src="js/TodoList.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
-
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
-          <div class="blog-post">
-          <h2 class="blog-post-title">{{title}}</h2>
-          <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
-          <div>{{content}}</div>
-        </div>
+         <div class="blog-post">
+            <h2 class="blog-post-title">{{title}}</h2>
+            <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+            <div>{{content}}</div>
+         </div>
         {{/each}}
       </script>
     </body>
