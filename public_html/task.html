@@ -20,7 +20,7 @@
              <nav class="teal lighten-1">
             <ul>
                 <li><a href="index.html">Home</a></li>   
-                <li><a class="selected" href="admin.html">Admin</a></li>   
+                <li><a href="admin.html">Admin</a></li>   
             </ul>
             </nav>
          </header>
@@ -28,7 +28,7 @@
 
                      <div class="container">
                 <div class="row">
-                    <h1 class="center-align"></h1>
+                    <h1 class="center-align">Add a Task</h1>
             </div>
                 <div class="row">
                     <div  class="col s12 main-container">
@@ -46,45 +46,15 @@
            </footer>   
                      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="libs/backendless.js"></script>
-      <script type="text/javascript" src="js/admin.js"></script>
+      <script type="text/javascript" src="js/task.js"></script>
       <script type="text/javascript" src="js/init.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/materialize.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
 
-      <script id="login-template" type="text/x-handlebars-template">
-       <div class="">
-          <h2 class="center-align colors">Login :]</h2>
-          <div>
-              <form class="form-signin">
-                  <div class="row">
-                      <div class="input-field ">
-                          <input id="email" type="email" name="email" class="validate">
-                          <label for="email">Email</label>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="input-field">
-                          <input id="password" type="password" name="password" class="validate">
-                          <label for="password">Password</label>
-                          </div>
-                  </div>
-                  <div class="row">
-                      <div class="">
-                              <button <a gotError="Materialize.toast('Incorrect Login', 4000)" class=" blue lighten-2 btn btn-large waves-effect waves-light" type="submit" name="action">login</button>
-                          
-                      </div>
-                  </div>    
-              </form>
-          </div>
-      </div>   
-      </script>
-       <script id="welcome-template" type="text/x-handlebars-template">
-        <h2 class="colors">Welcome,{{email}}</h2>
-        <button class="btn btn-large waves-effect waves-light add-blog blue lighten-2">Add a todo task</button>
-        <button class="btn btn-large waves-effect waves-light logout blue lighten-2">Logout</button>
-      </script>
+      
+       
       <script  id="add-blog-template" type="text/x-handlebars-template">
           <h2 class="colors">Add a new todo task</h2>
             <div class="row">
@@ -103,7 +73,7 @@
               </div>
               <div class="row">
                   <div class="col s12">
-                        <button class="btn btn-large waves-effect waves-light  blue lighten-2" type="submit" name="action">Submit</button>
+                          <button class="btn btn-large waves-effect waves-light  blue lighten-2" type="submit" name="action">Submit</button>
                   </div>
               </div>
           </form>
