@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="data:;base64,iVBORwOKGgo=">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
 
      
         
@@ -19,10 +21,11 @@
                      <h2></h2>        
             
          <header>   
-             <nav>
+             <nav class=" teal lighten-1">
             <ul>
                 <li><a href="index.html" class="selected">Home</a></li>   
-                <li><a href="admin.html">Admin</a></li>    
+                <li><a href="admin.html">Admin</a></li> 
+                <li><a href="#" class="add-blog">Add a Task</a><li>
             </ul>
             </nav>
          </header>
@@ -40,9 +43,9 @@
                 </div>
         </main>
         
-           <footer class="page-footer">
+           <footer class="page-footer  teal lighten-1">
             <div class="bttt container">
-                <a href="#">Back to the top</a>
+                <a class="bttt-color" href="#">Back to the top</a>
             </div>
             <div class="footer-copyright">
                 <div class="container">
@@ -59,10 +62,38 @@
           {{#each posts}}
          <div class="blog-post">
             <h2 class="blog-post-title">{{title}}</h2>
-            <p class="blog-post-meta">At {{format created}} by {{authorEmail}}</p>
+            <p class="blog-post-meta">At {{format created}}:{{authorEmail}}</p>
             <div>{{content}}</div>
+    <button class="material-icon trash"  type="submit" name="action" data={{objectId}}>Delete</button>
+
          </div>
         {{/each}}
       </script>
+      
+       <script  id="add-blog-template" type="text/x-handlebars-template">
+          <h2 class="colors">Add a new todo task</h2>
+            <div class="row">
+          <form class="col s12 form-add-blog colors">
+              <div class="row">
+                  <div class="input-field">
+                      <input id="title" type="text" name="title">
+              <label for="title">Title</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="input-field ">
+                      <textarea id="content" name="content" class="materialize-textarea"></textarea>
+              <label class="content "for="content">Content</label>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col s12">
+                          <button class="btn btn-large waves-effect waves-light  blue lighten-2" type="submit" name="action">Submit</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+      </script>
     </body>
 </html>
+       <!-- <button class="material-icon complete"  type="submit" name="action" data={{objectId}}><i class="material-icons">done</i>Done</button>-->

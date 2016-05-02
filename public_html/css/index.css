@@ -7,8 +7,21 @@ body {
     min-height: 95vh;
     flex-direction: column;
     height: 100%; 
-    background-color: #9C8780;
+    background-color: #795548;
 }
+h2 {
+    color: white;
+}
+label {
+    color: white;
+}
+.input-field {
+    color: white;
+}
+.colors {
+    color: white;
+}
+
 .blog-post-meta {
     font-size: 1.90em;
 }
@@ -45,6 +58,10 @@ body h1  {
     font-size: 8px;
     font-size: 1.5em;
 }
+.bttt-color{
+    color: buttonface;
+}
+
 a {
     color: white;
 }
@@ -73,6 +90,10 @@ nav {
     margin-bottom: 2px;
     font-size: 2em;
 }
+.trash, .complete {
+  color: white;
+  background-color: #03a9f4;
+}
 nav ul {
     list-style: none;
     padding: 10px 2px;
@@ -86,7 +107,7 @@ nav a {
     padding: 15px 10px;
 }
 nav a.selected,nav a:hover {
-    color: lightgray;
+    color: darkgray;
 }
 ul a {
     color: white;
