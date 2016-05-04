@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>TodoList-Danielle</title>
+        <title>To-doList-Danielle</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -17,7 +17,7 @@
       </head>
         <body >
 
-            <h1>TodoList</h1>
+            <h1>To-do List</h1>
                      <h2></h2>        
             
          <header>   
@@ -37,7 +37,7 @@
         <main> 
              <div class="container">
                 <div class="row">
-                    <h1 class="center-align">To Do List</h1>
+                    <h1 class="center-align">To-Do List</h1>
             </div>
                 <div class="row">
                     <div  class="col s12 main-container">
@@ -63,16 +63,27 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
       <script id="blogs-template" type="text/x-handlebars-template">
           {{#each posts}}
+          
          <div class="blog-post">
             <h2 class="blog-post-title">{{title}}</h2>
             <p class="blog-post-meta">At {{format created}}:{{authorEmail}}</p>
             <div>{{content}}</div>
+    <button class="btn btn-large waves-effect waves-light darken-1  blue white-out-post" > check as complete</button>
     <button class="material-icon trash"  type="submit" name="action" data={{objectId}}>Delete</button>
 
          </div>
+
         {{/each}}
       </script>
       
+      <script id="check-done-template" type="text/x-handlebars-template">
+                   <div class="white-text">
+                   <h4 class="blog-post-meta italic">This todo list has been marked</h4>
+                   <button class="btn btn-small waves-effect waves-light white-in-post orange"><a href="index.html"> uncheck</a><button>
+                   <button class="btn btn-small waves-effect waves-light white-in-post orange"> Log in </button>
+           
+           </div>                    
+       </script>
        <script  id="add-blog-template" type="text/x-handlebars-template">
           <h2 class="colors">Add a new todo task</h2>
             <div class="row">

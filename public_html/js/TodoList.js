@@ -18,6 +18,16 @@ $(function (){
         return moment(time).format("dddd, MMMM Do YYYY");
     });
         
+   /*     Handlebars.registerHelper('mine', function (){
+    var  Id = Backendless.UserService.getCurrentUser().ownerId;
+  var taskStorage = Backendless.Persistence.of( Tasks);
+   var dataQuery = {
+        condition: "author = " + Id
+   };
+   var myTasks = taskStorage.find( dataQuery );
+   return myTasks.data.length;  
+  });
+    */
         var blogScript = $("#blogs-template").html();
         var blogTemplate = Handlebars.compile(blogScript);
         var blogHTML = blogTemplate(wrapper);
@@ -25,6 +35,18 @@ $(function (){
         
     
         $('.main-container').html(blogHTML);
+        
+        $(document).on('click', '.white-out-post', function(){
+           var checkListScript = $("#check-done-template").html();
+           var checkListTemplate = Handlebars.compile(checkListScript);
+           $('.main-container').html(checkListTemplate);
+       });
+       
+       $(document).on('click', '.white-in-post', function(){
+           var uncheckListScript = $("#check-done-template").html();
+           var uncheckListTemplate = Handlebars.compile(uncheckListScript);
+           $('.main-container').html(uncheckListTemplate);
+       });
         
 });
         
